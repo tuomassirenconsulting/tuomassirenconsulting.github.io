@@ -1,26 +1,79 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132317088-1">
-    </script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-132317088-1');
-    </script>
-    <title>tuomas siren consulting</title>
     <style type="text/css">
-      body { padding-left: 5%; font-size:3vw; font-family: Impact, Charcoal, sans-serif; background-color:black; color:gray; display:table; position:absolute; height:100%; width:100%; margin:0; }
-      a { text-decoration:none; color:gray; }
-      #div1 { display:table-cell; vertical-align:middle; text-align:left; width:100%; }
+      html, body {
+	  height: 100%;
+	  width: 100%;
+	  font-size:2vw;
+	  font-family: Impact, Charcoal, sans-serif;
+	  background-color:black;
+	  color:gray;
+      }
+      .box {
+	  height: 100%;
+	  width: 100%;
+	  display: flex;
+	  flex-flow: column nowrap;
+	  justify-content: center;
+      }
+      .div1 {
+	  height: 100%;
+	  width: 100%;
+	  display: flex;
+	  flex-flow: row nowrap;
+	  justify-content: space-evenly;
+	  align-content: center;
+	  align-items: center;
+      }
+      .div2 {
+	  height: 100%;
+	  width: 100%;
+	  display: flex;
+	  flex-flow: row nowrap;
+	  justify-content: space-around;
+	  align-content: center;
+	  align-items: center;
+      }
+      .div11 {
+	  order: 1;
+	  flex: 0 1 auto;
+	  align-self: auto;
+	  min-width: 0;
+	  min-height: auto;
+      }
+      .div12 {
+	  order: 2;
+	  flex: 0 1 auto;
+	  align-self: auto;
+	  min-width: 0;
+	  min-height: auto;
+      }
+      .div13 {
+	  order: 3;
+	  flex: 0 1 auto;
+	  align-self: auto;
+	  min-width: 0;
+	  min-height: auto;
+      }
+      .div21 {
+	  order: 1;
+	  flex: 0 1 auto;
+	  align-self: auto;
+	  min-width: 0;
+	  min-height: auto;
+      }
     </style>
   </head>
   <body>
-    <div id="div1">
-      <div>
-	tuomas siren<br>
-	tuomas.siren@tuomassirenconsulting.com
+    <div class="box">
+      <div class="div1">
+	<div class="div11">improvise</div>
+	<div class="div12">adapt</div>
+	<div class="div13">overcome</div>
+      </div>
+      <div class="div2">
+	<div class="div21">tuomas.siren@tuomassirenconsulting.com</div>
       </div>
     </div>
   </body>
